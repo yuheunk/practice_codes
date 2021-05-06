@@ -6,4 +6,7 @@ n = int(input('number of houses'))
 houses = list(map(int, input('Location of houses').split()))
 
 houses.sort()
-print(houses[len(houses)//2-1])
+if len(houses)%2==0:
+    print(houses[len(houses)//2-1])
+else:
+    print(houses[len(houses)//2])
